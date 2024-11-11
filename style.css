@@ -383,6 +383,7 @@
   }
   
   @media (max-width: 768px) {
+    
     .nav {
       padding: 0px 20px;
     }
@@ -440,19 +441,9 @@
       width: 100%;
     }
   
-    .adoutUS {
+    .about-us{
       padding: 0px 20px;
       flex-direction: column;
-    }
-  
-    .adoutUS .left {
-      width: 100%;
-      margin-left: 0px;
-    }
-  
-    .adoutUS .right {
-      width: 100%;
-      margin-left: 0px;
     }
   
     .projectsCon {
@@ -480,39 +471,6 @@
   
     .project h3{
       text-align: left;
-    }
-    
-    .servicesCon {
-      padding: 0px 20px;
-    }
-  
-    .servicesCon h3 {
-      text-align: center;
-      font-size: 30px;
-      margin-top: 20px;
-    }
-  
-    .servicesCon .services {
-      flex-direction: column;
-      align-items: center;
-      margin-top: 30px;
-    }
-  
-    .services .service {
-      width: 90%;
-      height: auto;
-      margin-left: 0px;
-      margin-bottom: 20px;
-    }
-    .service img{
-     margin-bottom: 0px; 
-    }
-    .service h3{
-      font-size: 20px;
-      margin-top: 10px;
-    }
-    .service p{
-      text-align: center;
     }
   
     .contactForm{
@@ -634,3 +592,57 @@
     right: 0;
     margin-left: 15px;
   }
+  @media (max-width: 768px) {
+    .skills-section {
+      padding: 20px;
+    }
+  
+    .skills-section h2 {
+      font-size: 1.5em;
+    }
+  
+    .skills-carousel {
+      width: 100%;
+    }
+  
+    .skills-grid {
+      gap: 10px;
+    }
+  
+    .skill-card {
+      width: calc(100% / 3 - 10px); /* Show 3 items at once on smaller screens with a little gap */
+      padding: 10px;
+      margin-bottom: 20px;
+      background-color: #2a2a2a;
+      border-radius: 8px;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+  
+    .tooltip {
+      font-size: 0.8em;
+      bottom: -20px;
+    }
+  
+    .carousel-btn {
+      font-size: 20px;
+      padding: 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .skill-card {
+      width: calc(100% / 3 - 10px); /* Keep 3 items at once for very small screens too */
+      padding: 8px;
+    }
+  
+    .tooltip {
+      font-size: 0.7em;
+      bottom: -15px;
+    }
+  
+    .carousel-btn {
+      font-size: 18px;
+      padding: 6px;
+    }
+  }
+  
