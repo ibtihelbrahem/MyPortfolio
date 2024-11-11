@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ibtihel Braham - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <header class="nav">
+    <div class="logo">
+      <h1>Ibtihel</h1> <span>.</span>
+    </div>
+
+    <div class="links">
+      <ul class="nav-links">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#Contact">Contact</a></li>
+
+      </ul>
+      <i class='bx bx-menu menuBtn'></i>
+    </div>
+    <div class="contact">
+      <a href="https://www.linkedin.com/in/ibtihel-braham-69b810248/"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/ibtihelbrahem"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.facebook.com/ibtihel.brahem11/"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.instagram.com/ibtihelbrah/"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </header>
+
+  <div class="hero">
+    <div class="left">
+      <h1><span class="hig-text">Ibtihel</span> Braham</h1>
+      <h1>I am a <span id="heroText" class="hig-text"></span></h1>
+
+      <div class="btns">
+        <a href="assets/CV Ibtihel Braham_VF.pdf" download="CV_VF">
+          <button class="btn"><i class="fa-solid fa-download"></i>Download French CV </button>
+        </a>
+        <a href="assets/CV Ibtihel Braham_VA.pdf" download="CV_VA">
+          <button class="btn"><i class="fa-solid fa-download"></i>Download English CV </button>
+        </a>
+      </div>
+    </div>
+
+    <div class="right">
+      <img src="images/noback.png" alt="">
+    </div>
+  </div>
+
+  <div class="about-us" id="about">
+    <div class="about-content">
+      <div class="right">
+        <h2 class="title" data-aos="flip-down">About Me</h2>
+        <p class="description" data-aos="flip-up">
+          Hello! I’m Ibtihel, and I’m looking for a final-year project to put my skills into practice. I’m passionate about building impactful applications and excited to take on new challenges that will deepen my expertise and enrich my journey in software development.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="projectsCon" id="Projects">
+    <h3 data-aos="flip-up">Latest Projects</h3>
+
+    <div class="projects">
+
+      <div class="project" data-aos="fade-right">
+        <img
+          src="images/ecredit.png"
+          alt="">
+        <div class="projDetails">
+          <h3>E-credit App</h3>
+          <p>This project is a web application designed to automate the process of applying for bank credit. It is built using a microservices architecture.</p>
+          <a href="https://github.com/ibtihelbrahem/E-credit"><button class="btn" style="margin-top: 15px;"><i class="fa-solid fa-arrow-up-right-from-square"></i>View Project</button></a>
+        </div>
+      </div>
+
+      <div class="project" data-aos="fade-up">
+        <img src="images/enicar.png" alt="">
+        <div class="projDetails">
+          <h3>Enicar Learning</h3>
+          <p>This is a platform where instructors can manage courses, upload materials, and track progress. Students can browse, enroll, access content, and take assessments.</p>
+          <a href="https://github.com/ibtihelbrahem/Enicar-Learning"><button class="btn" style="margin-top: 15px;"><i class="fa-solid fa-arrow-up-right-from-square"></i>View Project</button></a>
+        </div>
+      </div>
+
+      <div class="project" data-aos="fade-down">
+        <img src="images/art.png"          alt="">
+        <div class="projDetails">
+          <h3>Art Marketplace</h3>
+          <p>In the Art Marketplace, users can navigate through a curated selection of artworks, connect with artists, and even add exceptional pieces to their collections.</p>
+          <a><button class="btn" style="margin-top: 15px;"><i class="fa-solid fa-arrow-up-right-from-square"></i>View Project</button></a>
+        </div>
+      </div>
+
+      <div class="project" data-aos="fade-left">
+        <img src="images/galagaa.PNG" alt="">
+        <div class="projDetails">
+          <h3>Galaga Game</h3>
+          <p>The game is a homage to the original Galaga game released by Namco in 1981, featuring the iconic user experience of a spacship that shoots its enemies in space in order to destroy them and grant the highest score.</p>
+          <a><button class="btn" style="margin-top: 15px;"><i class="fa-solid fa-arrow-up-right-from-square"></i>View Project</button></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="skills-section" id="Skills">
+    <h2>My Skills</h2>  
+    <div class="carousel-container">
+      <button class="carousel-btn left-btn" onclick="scrollCarousel('left')"><i class="fa-solid fa-arrow-left"></i></button>
+      <div class="skills-carousel">
+        <div class="skills-grid">
+          <!-- Skill Cards -->
+          <div class="skill-card"><img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML"><div class="tooltip">HTML</div></div>
+          <div class="skill-card"><img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS"><div class="tooltip">CSS</div></div>
+          <div class="skill-card"><img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript"><div class="tooltip">JavaScript</div></div>
+          <div class="skill-card"><img src="https://cdn.simpleicons.org/angular/DD0031" alt="Angular"><div class="tooltip">Angular</div></div>
+          <div class="skill-card"><img src="https://cdn.simpleicons.org/nextdotjs/000000" alt="Next.js"><div class="tooltip">Next.js</div></div>
+          <div class="skill-card"><img src="https://cdn.simpleicons.org/react/61DAFB" alt="React Native"><div class="tooltip">React Native</div></div>
+          <div class="skill-card"><img src="https://cdn.simpleicons.org/bootstrap/7952B3" alt="Bootstrap"><div class="tooltip">Bootstrap</div></div>
+          <div class="skill-card"><img src="https://cdn.simpleicons.org/springboot/6DB33F" alt="Spring Boot"><div class="tooltip">Spring Boot</div></div>
+          <div class="skill-card"><img src="https://cdn.simpleicons.org/nodedotjs/339933" alt="Node.js"><div class="tooltip">Node Js</div></div>
+          <div class="skill-card"><img src="https://cdn.simpleicons.org/dotnet/512BD4" alt=".NET" ><div class="tooltip">.NET</div></div>
+          <div class="skill-card"><img src="https://cdn.simpleicons.org/cplusplus/00599C" alt="C++" ><div class="tooltip">C++</div></div>
+          <div class="skill-card"><img src="images/java.png" alt="Java" width="80" ><div class="tooltip">Java</div></div>
+          <div class="skill-card"><img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" ><div class="tooltip">Python</div></div>
+          <div class="skill-card"><img src="https://cdn.simpleicons.org/postgresql/336791" alt="PostgreSQL"><div class="tooltip">PostgreSQL</div></div>
+          <div class="skill-card"><img src="https://cdn.simpleicons.org/mongodb/47A248" alt="MongoDB"><div class="tooltip">mongoDB</div></div>
+          <div class="skill-card"><img src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL"><div class="tooltip">mySQL</div></div>
+          <div class="skill-card"><img src="https://cdn.simpleicons.org/git/F05032" alt="Git"><div class="tooltip">Git</div></div>
+          <div class="skill-card"><img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker" ><div class="tooltip">Docker</div></div>
+
+         
+        </div>
+      </div>
+      <button class="carousel-btn right-btn" onclick="scrollCarousel('right')"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+  </div>
+
+  <div class="contactForm" id="Contact">
+    <div class="left">
+      <h3 data-aos="zoom-in">Contact</h3>
+
+      <p data-aos="zoom-in-up">Email : ibtihel.braham@enicar.ucar.tn</p>
+      <p data-aos="zoom-in-left">Phone Number : +216 56 206 248</p>
+    </div>
+
+    <form action="https://api.web3forms.com/submit" method="POST" class="contactFromCon">
+
+      <!-- Replace with your Access Key -->
+      <input type="hidden" name="access_key" value="6f1c2f08-f68d-4e0a-9acc-52a4612ec9a0">
+
+      <!-- Optional: From Name you want to see in the email
+       Default is "Notifications". you can overwrite here -->
+      <input type="hidden" name="from_name" value="Mahdi's Portfolio">
+
+
+      <!-- Optional: Subject an be prefilled using type="hidden"
+       or type="text" for normal user submitted input -->
+      <input type="hidden" name="subject" value="New Submission from Mahdi's Portfolio">
+
+      <div class="flex">
+        <div data-aos="zoom-in-down" class="inputBox">
+          <input required type="text" placeholder="First Name" name="firstName" id="firstName">
+        </div>
+
+        <div data-aos="zoom-in-up" class="inputBox">
+          <input required type="text" placeholder="Last Name" name="lastName" id="lastName">
+        </div>
+      </div>
+
+      <div class="flex" style="margin-top: 20px;">
+        <div class="inputBox">
+          <input data-aos="zoom-in-up" required type="email" placeholder="Your Email" name="email" id="email">
+        </div>
+
+        <div class="inputBox">
+          <input data-aos="zoom-in-down" required type="number" placeholder="Your Phone Number" name="number" id="number">
+        </div>
+      </div>
+
+      <div class="flex">
+        <textarea data-aos="zoom-in-left" name="message" required placeholder="Your Message" id="message"></textarea>
+      </div>
+
+      <button class="btn" type="submit" style="margin-top: 30px; margin-bottom: 30px;">Submit</button>
+    </form>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
